@@ -658,7 +658,13 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
   /* ---------- hero: drifting neural network ---------- */
   var hc=document.getElementById('net'), hx=hc.getContext('2d');
   var nodes=[], pulses=[], HW=0, HHt=0, reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var LINK=140;
+  var LINK=140, HOVER=150;
+  var mouse={x:null,y:null};
+  hc.addEventListener('mousemove', function(e){
+    var r=hc.getBoundingClientRect();
+    mouse.x=e.clientX-r.left; mouse.y=e.clientY-r.top;
+  });
+  hc.addEventListener('mouseleave', function(){ mouse.x=null; mouse.y=null; });
   function initNet(){
     var d=window.devicePixelRatio||1; HW=hc.clientWidth; HHt=hc.clientHeight;
     hc.width=HW*d; hc.height=HHt*d; hx.setTransform(d,0,0,d,0,0);
@@ -679,6 +685,21 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
       spawn+=dt; if(spawn>380){ spawn=0; var a=nodes[Math.floor(Math.random()*nodes.length)], nb=nodes.filter(function(n){var dx=n.x-a.x,dy=n.y-a.y;return n!==a&&dx*dx+dy*dy<LINK*LINK;}); if(nb.length){ a.f=1; pulses.push({a:a,b:nb[Math.floor(Math.random()*nb.length)],t:0}); } }
       pulses=pulses.filter(function(p){ p.t+=dt/700; if(p.t>=1){ p.b.f=1; return false; } return true; });
       pulses.forEach(function(p){ var x=p.a.x+(p.b.x-p.a.x)*p.t, y=p.a.y+(p.b.y-p.a.y)*p.t; var gr=hx.createRadialGradient(x,y,0,x,y,10); gr.addColorStop(0,'rgba(180,225,255,.95)'); gr.addColorStop(1,'rgba(124,196,255,0)'); hx.fillStyle=gr; hx.beginPath(); hx.arc(x,y,10,0,Math.PI*2); hx.fill(); });
+    }
+    if(!reduce && mouse.x!=null){
+      nodes.forEach(function(n){
+        var dx=n.x-mouse.x, dy=n.y-mouse.y, dd=Math.sqrt(dx*dx+dy*dy);
+        if(dd<HOVER){
+          var k=1-dd/HOVER;
+          n.f=Math.max(n.f,k);
+          if(dd>0.5){ n.x+=dx/dd*k*0.9; n.y+=dy/dd*k*0.9; }
+          hx.strokeStyle='rgba(180,225,255,'+(0.4*k)+')'; hx.lineWidth=1.1;
+          hx.beginPath(); hx.moveTo(mouse.x,mouse.y); hx.lineTo(n.x,n.y); hx.stroke();
+        }
+      });
+      var gr=hx.createRadialGradient(mouse.x,mouse.y,0,mouse.x,mouse.y,16);
+      gr.addColorStop(0,'rgba(225,242,255,.85)'); gr.addColorStop(1,'rgba(124,196,255,0)');
+      hx.fillStyle=gr; hx.beginPath(); hx.arc(mouse.x,mouse.y,16,0,Math.PI*2); hx.fill();
     }
     nodes.forEach(function(n){ hx.fillStyle='rgba(124,196,255,'+(0.35+0.6*n.f)+')'; hx.beginPath(); hx.arc(n.x,n.y,2+2.2*n.f,0,Math.PI*2); hx.fill(); });
     if(!reduce) requestAnimationFrame(stepNet);
