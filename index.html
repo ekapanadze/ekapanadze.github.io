@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Elene Kapanadze | MD Candidate, Computational Neuroscience</title>
-<meta name="description" content="Elene Kapanadze is a physician-in-training building models of the brain. Interactive computational neuroscience tools in English and Georgian, plus research and projects.">
+<meta name="description" content="Elene Kapanadze is a physician-in-training building models of the brain. Interactive computational neuroscience tools in English and German, plus research and projects.">
 <link rel="canonical" href="https://kapanadze.com/">
 <script type="application/ld+json">
 {
@@ -167,13 +167,13 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
   <div class="wrap">
     <a class="brand" href="#top">Elene Kapanadze</a>
     <nav>
-      <a class="nl" href="#radar">Radar</a>
-      <a class="nl" href="#lab">Lab</a>
-      <a class="nl" href="#about">About</a>
-      <a class="nl" href="#research">Research</a>
+      <a class="nl" href="#radar" data-i="navRadar">Radar</a>
+      <a class="nl" href="#lab" data-i="navLab">Lab</a>
+      <a class="nl" href="#about" data-i="navAbout">About</a>
+      <a class="nl" href="#research" data-i="navResearch">Research</a>
       <div class="lang" style="margin-left:22px" role="group" aria-label="Language">
         <button type="button" id="bEn" aria-pressed="true">EN</button>
-        <button type="button" id="bKa" aria-pressed="false">ქარ</button>
+        <button type="button" id="bDe" aria-pressed="false">DE</button>
       </div>
     </nav>
   </div>
@@ -183,14 +183,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
   <div class="hero">
     <canvas id="net" aria-hidden="true"></canvas>
     <div class="wrap">
-      <p class="eyebrow">MD candidate &middot; Tbilisi, Georgia</p>
-      <h1>A physician-in-training who builds models of the brain.</h1>
-      <p class="lead"><b>Elene Kapanadze.</b> I combine clinical training with computational neuroscience, aiming at objective, biomarker-based diagnosis in psychiatry.</p>
+      <p class="eyebrow" data-i="eyebrow">MD candidate &middot; Tbilisi, Georgia</p>
+      <h1 data-i="h1">A physician-in-training who builds models of the brain.</h1>
+      <p class="lead"><b>Elene Kapanadze.</b> <span data-i="lead">I combine clinical training with computational neuroscience, aiming at objective, biomarker-based diagnosis in psychiatry.</span></p>
       <div class="btns">
-        <a class="btn primary" href="#radar">See the live research radar</a>
-        <a class="btn" href="#lab">Try the brain lab</a>
-        <a class="btn" href="mailto:elene@kapanadze.com">Email me</a>
-        <a class="btn" href="cv.pdf">Download CV</a>
+        <a class="btn primary" href="#radar" data-i="btnRadar">See the live research radar</a>
+        <a class="btn" href="#lab" data-i="btnLab">Try the brain lab</a>
+        <a class="btn" href="mailto:elene@kapanadze.com" data-i="btnEmail">Email me</a>
+        <a class="btn" href="cv.pdf" data-i="btnCv">Download CV</a>
       </div>
       <div class="links">
         <a rel="me" href="https://orcid.org/0009-0003-9464-9598">ORCID</a>
@@ -288,7 +288,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
           </div>
         </div>
       </div>
-      <p class="soon" data-i="soon">Coming next: integrate-and-fire networks, EEG signal explorer, and a PhD navigator for Georgian students.</p>
+      <p class="soon" data-i="soon">Coming next: integrate-and-fire networks, an EEG signal explorer, and a PhD application guide.</p>
     </div>
   </section>
 
@@ -296,45 +296,45 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
     <div class="wrap">
       <div class="about">
         <div>
-          <h2 class="h">About</h2>
-          <p class="sub2">Clinical training, a first publication, and a change of direction toward the brain.</p>
-          <p>I am a sixth-year medical student at Petre Shotadze Tbilisi Medical Academy in Georgia. My first publication was a microbiology study of antibiotic resistance patterns in <em>Staphylococcus aureus</em>, where I did the laboratory work, the statistics and the data visualization.</p>
-          <p>That taught me how to run a study from bench to manuscript. My interest has since moved to computational and systems neuroscience, and to neuropsychiatry in particular: how signals from the brain, such as EEG and imaging, can support more objective diagnosis of psychiatric conditions.</p>
-          <p>The research radar and the lab on this page are built to be useful, not decorative: the radar tracks new work from Swiss labs as it is published, and the lab explains models I study, in English and in Georgian, where good neuroscience material is scarce.</p>
+          <h2 class="h" data-i="aboutH">About</h2>
+          <p class="sub2" data-i="aboutSub">Clinical training, a first publication, and a change of direction toward the brain.</p>
+          <p data-i="aboutP1">I am a sixth-year medical student at Petre Shotadze Tbilisi Medical Academy in Georgia. My first publication was a microbiology study of antibiotic resistance patterns in <em>Staphylococcus aureus</em>, where I did the laboratory work, the statistics and the data visualization.</p>
+          <p data-i="aboutP2">That taught me how to run a study from bench to manuscript. My interest has since moved to computational and systems neuroscience, and to neuropsychiatry in particular: how signals from the brain, such as EEG and imaging, can support more objective diagnosis of psychiatric conditions.</p>
+          <p data-i="aboutP3">The research radar and the lab on this page are built to be useful, not decorative: the radar tracks new work from Swiss labs as it is published, and the lab explains models I study, in English and in German, for colleagues in the German-speaking research world too.</p>
         </div>
         <aside class="facts">
           <dl>
-            <dt>Training</dt><dd>MD, Petre Shotadze Tbilisi Medical Academy</dd>
-            <dt>Interests</dt><dd>Computational and systems neuroscience, neuropsychiatry, EEG and neuroimaging</dd>
-            <dt>Courses</dt><dd>Computational Neuroscience (Coursera); Foundations of Clinical Neuroscience</dd>
-            <dt>Languages</dt><dd>Georgian (native), English (C1), German (C1), Russian (fluent)</dd>
+            <dt data-i="factTrainingK">Training</dt><dd data-i="factTrainingV">MD, Petre Shotadze Tbilisi Medical Academy</dd>
+            <dt data-i="factInterestsK">Interests</dt><dd data-i="factInterestsV">Computational and systems neuroscience, neuropsychiatry, EEG and neuroimaging</dd>
+            <dt data-i="factCoursesK">Courses</dt><dd>Computational Neuroscience (Coursera); Foundations of Clinical Neuroscience</dd>
+            <dt data-i="factLangK">Languages</dt><dd data-i="factLangV">Georgian (native), English (C1), German (C1), Russian (fluent)</dd>
           </dl>
         </aside>
       </div>
       <div class="bring">
-        <div><h4>Clinical grounding</h4><p>Six years of medical training. I know what the diagnostic problem looks like at the bedside, which is the problem the models are meant to serve.</p></div>
-        <div><h4>Research craft</h4><p>I designed, ran and published a laboratory study, with statistical analysis in SPSS and data visualization.</p></div>
-        <div><h4>Computational training</h4><p>Coursework in computational neuroscience, and an independent reanalysis of published ENIGMA-ADHD neuroimaging data, built in Python and published on GitHub Pages.</p></div>
+        <div><h4 data-i="bring1H">Clinical grounding</h4><p data-i="bring1P">Six years of medical training. I know what the diagnostic problem looks like at the bedside, which is the problem the models are meant to serve.</p></div>
+        <div><h4 data-i="bring2H">Research craft</h4><p data-i="bring2P">I designed, ran and published a laboratory study, with statistical analysis in SPSS and data visualization.</p></div>
+        <div><h4 data-i="bring3H">Computational training</h4><p data-i="bring3P">Coursework in computational neuroscience, and an independent reanalysis of published ENIGMA-ADHD neuroimaging data, built in Python and published on GitHub Pages.</p></div>
       </div>
     </div>
   </section>
 
   <section class="light" id="research">
     <div class="wrap">
-      <h2 class="h">Research</h2>
-      <p class="sub2">One peer-reviewed paper, and an independent computational project built on published data.</p>
+      <h2 class="h" data-i="resH">Research</h2>
+      <p class="sub2" data-i="resSub">One peer-reviewed paper, and an independent computational project built on published data.</p>
       <div class="cards">
         <article class="card">
-          <span class="tag">Published</span>
+          <span class="tag" data-i="tagPub">Published</span>
           <h3>Evaluation of antibiotic susceptibility patterns across two adult age groups: <em>S. aureus</em> in the Kakheti region, Georgia</h3>
-          <p>A public health-oriented study of antibiotic resistance. My contributions: bacterial culture, disk diffusion susceptibility testing, SPSS statistical analysis, data visualization and manuscript drafting.</p>
+          <p data-i="card1P">A public health-oriented study of antibiotic resistance. My contributions: bacterial culture, disk diffusion susceptibility testing, SPSS statistical analysis, data visualization and manuscript drafting.</p>
           <div class="meta">Revazishvili T, Kapanadze E, Pangani N, Zarnadze M, Loladze M. <em>Reviews and Research in Medical Microbiology</em> 37(3), 163&ndash;170, 2026.</div>
         </article>
         <article class="card">
-          <span class="tag">Independent project</span>
-          <h3>ENIGMA&ndash;ADHD cortical thickness reanalysis</h3>
-          <p>Reproduced case-control cortical thickness effect sizes across 34 regions from published ENIGMA-ADHD summary statistics (Hoogman et al., 2019). Re-applied Benjamini&ndash;Hochberg FDR correction, compared adult versus adolescent cohorts, and built interactive visualizations. Python (pandas, statsmodels, Plotly), built with AI coding assistance.</p>
-          <a class="more" href="https://ekapanadze.github.io/Enigmaadhd/">Open the project page &rarr;</a>
+          <span class="tag" data-i="tagIndep">Independent project</span>
+          <h3 data-i="card2H">ENIGMA&ndash;ADHD cortical thickness reanalysis</h3>
+          <p data-i="card2P">Reproduced case-control cortical thickness effect sizes across 34 regions from published ENIGMA-ADHD summary statistics (Hoogman et al., 2019). Re-applied Benjamini&ndash;Hochberg FDR correction, compared adult versus adolescent cohorts, and built interactive visualizations. Python (pandas, statsmodels, Plotly), built with AI coding assistance.</p>
+          <a class="more" href="https://ekapanadze.github.io/Enigmaadhd/" data-i="card2Link">Open the project page &rarr;</a>
         </article>
       </div>
     </div>
@@ -345,7 +345,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
   <div class="wrap">
     <div>
       <div class="contact-big"><a href="mailto:elene@kapanadze.com">elene@kapanadze.com</a></div>
-      <div>Open to research opportunities and to PhD supervisors&rsquo; questions.</div>
+      <div data-i="footerLine">Open to research opportunities and to PhD supervisors&rsquo; questions.</div>
     </div>
     <div>&copy; <span id="yr"></span> Elene Kapanadze</div>
   </div>
@@ -358,6 +358,32 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
   /* ---------- language ---------- */
   var TXT = {
     en:{
+      navRadar:"Radar", navLab:"Lab", navAbout:"About", navResearch:"Research",
+      eyebrow:"MD candidate · Tbilisi, Georgia",
+      h1:"A physician-in-training who builds models of the brain.",
+      lead:"I combine clinical training with computational neuroscience, aiming at objective, biomarker-based diagnosis in psychiatry.",
+      btnRadar:"See the live research radar", btnLab:"Try the brain lab",
+      btnEmail:"Email me", btnCv:"Download CV",
+      aboutH:"About",
+      aboutSub:"Clinical training, a first publication, and a change of direction toward the brain.",
+      aboutP1:"I am a sixth-year medical student at Petre Shotadze Tbilisi Medical Academy in Georgia. My first publication was a microbiology study of antibiotic resistance patterns in <em>Staphylococcus aureus</em>, where I did the laboratory work, the statistics and the data visualization.",
+      aboutP2:"That taught me how to run a study from bench to manuscript. My interest has since moved to computational and systems neuroscience, and to neuropsychiatry in particular: how signals from the brain, such as EEG and imaging, can support more objective diagnosis of psychiatric conditions.",
+      aboutP3:"The research radar and the lab on this page are built to be useful, not decorative: the radar tracks new work from Swiss labs as it is published, and the lab explains models I study, in English and in German, for colleagues in the German-speaking research world too.",
+      factTrainingK:"Training", factTrainingV:"MD, Petre Shotadze Tbilisi Medical Academy",
+      factInterestsK:"Interests", factInterestsV:"Computational and systems neuroscience, neuropsychiatry, EEG and neuroimaging",
+      factCoursesK:"Courses",
+      factLangK:"Languages", factLangV:"Georgian (native), English (C1), German (C1), Russian (fluent)",
+      bring1H:"Clinical grounding", bring1P:"Six years of medical training. I know what the diagnostic problem looks like at the bedside, which is the problem the models are meant to serve.",
+      bring2H:"Research craft", bring2P:"I designed, ran and published a laboratory study, with statistical analysis in SPSS and data visualization.",
+      bring3H:"Computational training", bring3P:"Coursework in computational neuroscience, and an independent reanalysis of published ENIGMA-ADHD neuroimaging data, built in Python and published on GitHub Pages.",
+      resH:"Research", resSub:"One peer-reviewed paper, and an independent computational project built on published data.",
+      tagPub:"Published",
+      card1P:"A public health-oriented study of antibiotic resistance. My contributions: bacterial culture, disk diffusion susceptibility testing, SPSS statistical analysis, data visualization and manuscript drafting.",
+      tagIndep:"Independent project",
+      card2H:"ENIGMA–ADHD cortical thickness reanalysis",
+      card2P:"Reproduced case-control cortical thickness effect sizes across 34 regions from published ENIGMA-ADHD summary statistics (Hoogman et al., 2019). Re-applied Benjamini–Hochberg FDR correction, compared adult versus adolescent cohorts, and built interactive visualizations. Python (pandas, statsmodels, Plotly), built with AI coding assistance.",
+      card2Link:"Open the project page →",
+      footerLine:"Open to research opportunities and to PhD supervisors’ questions.",
       labTitle:"Interactive brain lab",
       labSub:"Computational neuroscience models you can test yourself. Move the sliders and watch the neuron respond.",
       hhTitle:"A neuron: the Hodgkin–Huxley model",
@@ -383,46 +409,76 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
       openSrc:"Open this search in Europe PMC", liveAt:"Live from Europe PMC, updated",
       matches:"matching papers", noRes:"No papers found for this selection.", papersN:"papers"
     },
-    ka:{
-      labTitle:"ინტერაქტიული ნეირომეცნიერების ლაბორატორია",
-      labSub:"გამოთვლითი ნეირომეცნიერების მოდელები, რომლებიც შეგიძლიათ თავად გამოსცადოთ. გადაანაცვლეთ სლაიდერები და დააკვირდით, როგორ რეაგირებს ნეირონი.",
-      hhTitle:"ნეირონი: ჰოჯკინ–ჰაქსლის მოდელი",
-      hhText:"ეს მოდელი აღწერს, როგორ წარმოიქმნება იმპულსი (მოქმედების პოტენციალი) ნატრიუმისა და კალიუმის არხების გახსნა-დახურვის შედეგად. გაზარდეთ შემავალი დენი და დააკვირდით, როგორ გადადის ნეირონი სიჩუმიდან განმეორებით აქტივობაზე.",
-      legNa:"ნატრიუმის არხი", legK:"კალიუმის არხი",
-      cur:"შემავალი დენი", spikes:"იმპულსები", rate:"სიხშირე (ჰც)",
-      fiTitle:"სიხშირის დამოკიდებულება შემავალ დენზე",
-      stdpTitle:"სწავლა: სინაფსური პლასტიურობა დროზე დამოკიდებულებით (STDP)",
-      stdpText:"სინაფსის სიძლიერე იცვლება იმპულსების დროის მიხედვით. თუ პრესინაფსური ნეირონი პოსტსინაფსურზე ცოტა ადრე ისვრის, კავშირი მლიერდება; თუ ცოტა გვიან — სუსტდება. შეცვალეთ დროის სხვაობა და დააკვირდით სინაფსური წონის ცვლილებას.",
-      dt:"დროის სხვაობა (პოსტ − პრე)", tw:"დროის ფანჯარა", dw:"სინაფსური წონის ცვლილება (ფარდობითი)",
-      ltp:"კავშირი მლიერდება (LTP)", ltd:"კავშირი სუსტდება (LTD)", none:"ცვლილება არ არის",
-      soon:"მალე: ინტეგრაცია-და-სროლის ქსელები, EEG სიგნალის მკვლევარი და PhD ნავიგატორი ქართველი სტუდენტებისთვის.",
-      unitCur:"მკა/სმ²", unitMs:"მს",
-      radTitle:"ნეირომეცნიერების კვლევის რადარი",
-      radSub:"შვეიცარიული ინსტიტუტების ახალი პუბლიკაციების ცოცხალი არხი იმ თემებზე, რომლებზეც ვმუშაობ. გვერდის ყოველი გახსნისას თავისით განახლდება Europe PMC-დან და არასოდეს ძველდება.",
-      fInst:"ინსტიტუტი", fPre:"პრეპრინტების ჩათვლით",
-      latestT:"უახლესი პუბლიკაციები", yearT:"პუბლიკაციები წელიწადში",
-      yearHint:"ფილტრებს შესაბამისი პუბლიკაციები (მიმდინარე წელი ჯერ არასრულია).",
-      seniorT:"დასაკვირვებელი უფროსი ავტორები",
-      seniorNote:"ყველაზე ხშირი ბოლო ავტორები (როგორც წესი, ჯგუფის ხელმძღვანელები) უახლეს 100 შესაბამის პუბლიკაციაში.",
-      noSenior:"ამ არჩევანში განმეორებადი ავტორები საკმარისი არ არის.",
-      loading:"ცოცხალი მონაცემები იტვირთება…", errMsg:"ცოცხალი მონაცემების ჩატვირთვა ახლა ვერ მოხერხდა.",
-      openSrc:"ამ ძიების გახსნა Europe PMC-ში", liveAt:"ცოცხალი მონაცემები Europe PMC-დან, განახლდა",
-      matches:"შესაბამისი პუბლიკაცია", noRes:"ამ არჩევანით პუბლიკაცია ვერ მოიძებნა.", papersN:"პუბლიკაცია"
+    de:{
+      navRadar:"Radar", navLab:"Labor", navAbout:"Über mich", navResearch:"Forschung",
+      eyebrow:"Medizinstudentin · Tiflis, Georgien",
+      h1:"Eine angehende Ärztin, die Modelle des Gehirns entwickelt.",
+      lead:"Ich verbinde klinische Ausbildung mit computergestützter Neurowissenschaft, mit dem Ziel einer objektiveren, biomarkerbasierten Diagnostik in der Psychiatrie.",
+      btnRadar:"Das Live-Forschungsradar ansehen", btnLab:"Zum Gehirnlabor",
+      btnEmail:"E-Mail senden", btnCv:"Lebenslauf herunterladen",
+      labTitle:"Interaktives Gehirnlabor",
+      labSub:"Modelle der computergestützten Neurowissenschaft, die Sie selbst testen können. Bewegen Sie die Regler und beobachten Sie, wie das Neuron reagiert.",
+      hhTitle:"Ein Neuron: das Hodgkin–Huxley-Modell",
+      hhText:"Dieses Modell beschreibt, wie ein Impuls (Aktionspotenzial) durch das Öffnen und Schließen von Natrium- und Kaliumkanälen entsteht. Erhöhen Sie den Eingangsstrom und beobachten Sie, wie das Neuron von Ruhe zu wiederholtem Feuern übergeht.",
+      legNa:"Natriumkanal", legK:"Kaliumkanal",
+      cur:"Eingangsstrom", spikes:"Impulse", rate:"Feuerrate (Hz)",
+      fiTitle:"Feuerrate in Abhängigkeit vom Eingangsstrom",
+      stdpTitle:"Lernen: zeitabhängige synaptische Plastizität (STDP)",
+      stdpText:"Synapsen ändern ihre Stärke je nach zeitlichem Abstand der Impulse. Feuert das präsynaptische Neuron kurz vor dem postsynaptischen, verstärkt sich die Verbindung; feuert es kurz danach, schwächt sie sich ab. Verändern Sie den zeitlichen Abstand und beobachten Sie die Änderung des synaptischen Gewichts.",
+      dt:"Zeitlicher Abstand (post − prä)", tw:"Zeitfenster", dw:"Änderung des synaptischen Gewichts (relativ)",
+      ltp:"Verbindung verstärkt sich (LTP)", ltd:"Verbindung schwächt sich ab (LTD)", none:"Keine Änderung",
+      soon:"Demnächst: Integrate-and-Fire-Netzwerke, ein EEG-Signal-Explorer und ein PhD-Bewerbungsleitfaden.",
+      unitCur:"µA/cm²", unitMs:"ms",
+      radTitle:"Neurowissenschafts-Forschungsradar",
+      radSub:"Ein Live-Feed neuer Publikationen Schweizer Institutionen zu den Themen, an denen ich arbeite. Es aktualisiert sich bei jedem Laden der Seite direkt aus Europe PMC und veraltet daher nie.",
+      fInst:"Institution", fPre:"Preprints einschließen",
+      latestT:"Neueste Publikationen", yearT:"Publikationen pro Jahr",
+      yearHint:"Publikationen, die den Filtern entsprechen (das laufende Jahr ist unvollständig).",
+      seniorT:"Zu beobachtende Seniorautor:innen",
+      seniorNote:"Häufigste Letztautor:innen, in der Regel die Gruppenleiter:innen, unter den neuesten 100 passenden Publikationen.",
+      noSenior:"Nicht genügend wiederkehrende Autor:innen in dieser Auswahl.",
+      loading:"Live-Daten werden geladen…", errMsg:"Live-Daten konnten gerade nicht geladen werden.",
+      openSrc:"Diese Suche in Europe PMC öffnen", liveAt:"Live von Europe PMC, aktualisiert",
+      matches:"passende Publikationen", noRes:"Keine Publikationen für diese Auswahl gefunden.", papersN:"Publikationen",
+      aboutH:"Über mich",
+      aboutSub:"Klinische Ausbildung, eine erste Publikation und eine neue Richtung: das Gehirn.",
+      aboutP1:"Ich bin Medizinstudentin im sechsten Jahr an der Petre Shotadze Tbilisi Medical Academy in Georgien. Meine erste Publikation war eine mikrobiologische Studie zu Antibiotikaresistenzmustern bei <em>Staphylococcus aureus</em>, bei der ich die Laborarbeit, die Statistik und die Datenvisualisierung übernahm.",
+      aboutP2:"Das hat mir gezeigt, wie man eine Studie von der Laborbank bis zum Manuskript führt. Mein Interesse hat sich seitdem zur computergestützten Systemneurowissenschaft verschoben, insbesondere zur Neuropsychiatrie: wie Signale aus dem Gehirn, etwa EEG und Bildgebung, eine objektivere Diagnostik psychiatrischer Erkrankungen unterstützen können.",
+      aboutP3:"Das Forschungsradar und das Labor auf dieser Seite sind nützlich gedacht, nicht nur dekorativ: Das Radar verfolgt neue Arbeiten Schweizer Labore, sobald sie veröffentlicht werden, und das Labor erklärt Modelle, die ich studiere, auf Englisch und auf Deutsch, auch für Kolleg:innen aus dem deutschsprachigen Forschungsraum.",
+      factTrainingK:"Ausbildung", factTrainingV:"Humanmedizin, Petre Shotadze Tbilisi Medical Academy",
+      factInterestsK:"Interessen", factInterestsV:"Computergestützte Systemneurowissenschaft, Neuropsychiatrie, EEG und Neuroimaging",
+      factCoursesK:"Kurse",
+      factLangK:"Sprachen", factLangV:"Georgisch (Muttersprache), Englisch (C1), Deutsch (C1), Russisch (fließend)",
+      bring1H:"Klinische Grundlage", bring1P:"Sechs Jahre medizinische Ausbildung. Ich weiß, wie sich das diagnostische Problem am Krankenbett darstellt — genau das Problem, dem die Modelle dienen sollen.",
+      bring2H:"Forschungserfahrung", bring2P:"Ich habe eine Laborstudie konzipiert, durchgeführt und veröffentlicht, mit statistischer Analyse in SPSS und Datenvisualisierung.",
+      bring3H:"Computergestützte Ausbildung", bring3P:"Kursarbeit in computergestützter Neurowissenschaft sowie eine eigenständige Neuauswertung veröffentlichter ENIGMA-ADHD-Neuroimaging-Daten, umgesetzt in Python und veröffentlicht auf GitHub Pages.",
+      resH:"Forschung", resSub:"Eine peer-reviewte Publikation und ein eigenständiges computergestütztes Projekt auf Basis veröffentlichter Daten.",
+      tagPub:"Veröffentlicht",
+      card1P:"Eine Studie im Bereich Public Health zu Antibiotikaresistenzen. Meine Beiträge: bakterielle Kultur, Diskdiffusionstests zur Empfindlichkeitsbestimmung, statistische Analyse in SPSS, Datenvisualisierung und Verfassen des Manuskripts.",
+      tagIndep:"Eigenständiges Projekt",
+      card2H:"ENIGMA–ADHD: Neuauswertung der kortikalen Dicke",
+      card2P:"Reproduktion der Fall-Kontroll-Effektstärken der kortikalen Dicke in 34 Hirnregionen auf Basis veröffentlichter ENIGMA-ADHD-Summary-Statistiken (Hoogman et al., 2019). Erneute Anwendung der Benjamini–Hochberg-FDR-Korrektur, Vergleich von Erwachsenen- und Jugendlichenkohorten und Erstellung interaktiver Visualisierungen. Python (pandas, statsmodels, Plotly), mit KI-Unterstützung entwickelt.",
+      card2Link:"Projektseite öffnen →",
+      footerLine:"Offen für Forschungsmöglichkeiten und Fragen von PhD-Betreuer:innen."
     }
   };
   var lang='en';
   function T(k){return TXT[lang][k];}
   function applyLang(l){
     lang=l;
-    document.documentElement.lang = (l==='ka')?'ka':'en';
-    document.querySelectorAll('[data-i]').forEach(function(el){ el.textContent=T(el.getAttribute('data-i')); });
+    document.documentElement.lang = (l==='de')?'de':'en';
+    document.querySelectorAll('[data-i]').forEach(function(el){
+      var k=el.getAttribute('data-i'), v=T(k);
+      if(/<[a-z][\s\S]*>/i.test(v)) el.innerHTML=v; else el.textContent=v;
+    });
     document.getElementById('bEn').setAttribute('aria-pressed', l==='en');
-    document.getElementById('bKa').setAttribute('aria-pressed', l==='ka');
+    document.getElementById('bDe').setAttribute('aria-pressed', l==='de');
     updateHH(); updateSTDP();
+    if(typeof refreshRadarLabels==='function') refreshRadarLabels();
     if(typeof renderRadar==='function') renderRadar();
   }
   document.getElementById('bEn').onclick=function(){applyLang('en');};
-  document.getElementById('bKa').onclick=function(){applyLang('ka');};
+  document.getElementById('bDe').onclick=function(){applyLang('de');};
 
   /* ---------- canvas helpers ---------- */
   function prep(c){
@@ -543,21 +599,21 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
   /* ---------- research radar (live from Europe PMC) ---------- */
   var API='https://www.ebi.ac.uk/europepmc/webservices/rest/search';
   var TOPICS=[
-    {en:'Computational psychiatry', q:'("computational psychiatry" OR "computational psychopathology" OR "computational neuropsychiatry")'},
-    {en:'ADHD & EEG', q:'(ADHD AND (EEG OR electroencephalography))'},
-    {en:"Alzheimer's imaging", q:'(Alzheimer* AND (MRI OR neuroimaging OR "brain asymmetry" OR "cortical thickness"))'},
-    {en:'Computational neuroscience', q:'("computational neuroscience" OR "spiking neural network" OR "neural circuit model" OR "neural mass model")'},
-    {en:'Psychiatric biomarkers', q:'((psychiatric OR schizophrenia OR depression) AND biomarker* AND (EEG OR MRI OR "machine learning"))'}
+    {en:'Computational psychiatry', de:'Computational Psychiatry', q:'("computational psychiatry" OR "computational psychopathology" OR "computational neuropsychiatry")'},
+    {en:'ADHD & EEG', de:'ADHS & EEG', q:'(ADHD AND (EEG OR electroencephalography))'},
+    {en:"Alzheimer's imaging", de:'Alzheimer-Bildgebung', q:'(Alzheimer* AND (MRI OR neuroimaging OR "brain asymmetry" OR "cortical thickness"))'},
+    {en:'Computational neuroscience', de:'Computational Neuroscience', q:'("computational neuroscience" OR "spiking neural network" OR "neural circuit model" OR "neural mass model")'},
+    {en:'Psychiatric biomarkers', de:'Psychiatrische Biomarker', q:'((psychiatric OR schizophrenia OR depression) AND biomarker* AND (EEG OR MRI OR "machine learning"))'}
   ];
   var INSTS=[
-    {en:'All of Switzerland', q:'(AFF:"Switzerland")'},
-    {en:'ETH Zurich', q:'(AFF:"ETH Zurich" OR AFF:"ETH Zürich")'},
-    {en:'University of Zurich', q:'(AFF:"University of Zurich")'},
-    {en:'EPFL', q:'(AFF:"EPFL" OR AFF:"Ecole Polytechnique Federale de Lausanne" OR AFF:"École Polytechnique Fédérale de Lausanne")'},
-    {en:'University of Basel', q:'(AFF:"University of Basel")'},
-    {en:'University of Geneva', q:'(AFF:"University of Geneva")'},
-    {en:'University of Bern', q:'(AFF:"University of Bern")'},
-    {en:'University of Lausanne / CHUV', q:'(AFF:"University of Lausanne" OR AFF:"CHUV")'}
+    {en:'All of Switzerland', de:'Ganze Schweiz', q:'(AFF:"Switzerland")'},
+    {en:'ETH Zurich', de:'ETH Zürich', q:'(AFF:"ETH Zurich" OR AFF:"ETH Zürich")'},
+    {en:'University of Zurich', de:'Universität Zürich', q:'(AFF:"University of Zurich")'},
+    {en:'EPFL', de:'EPFL', q:'(AFF:"EPFL" OR AFF:"Ecole Polytechnique Federale de Lausanne" OR AFF:"École Polytechnique Fédérale de Lausanne")'},
+    {en:'University of Basel', de:'Universität Basel', q:'(AFF:"University of Basel")'},
+    {en:'University of Geneva', de:'Universität Genf', q:'(AFF:"University of Geneva")'},
+    {en:'University of Bern', de:'Universität Bern', q:'(AFF:"University of Bern")'},
+    {en:'University of Lausanne / CHUV', de:'Universität Lausanne / CHUV', q:'(AFF:"University of Lausanne" OR AFF:"CHUV")'}
   ];
   var R={topic:0,inst:0,pre:false,seq:0,data:null,err:false};
   function $(id){return document.getElementById(id);}
@@ -589,7 +645,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
   }
   function authorList(s){ return s.replace(/\.\s*$/,'').split(/,\s*/).filter(Boolean); }
   function fmtDate(s){
-    if(/^\d{4}-\d{2}-\d{2}$/.test(s)){ try{ return new Date(s+'T00:00:00').toLocaleDateString(lang==='ka'?'ka-GE':'en-GB',{day:'numeric',month:'short',year:'numeric'}); }catch(e){} }
+    if(/^\d{4}-\d{2}-\d{2}$/.test(s)){ try{ return new Date(s+'T00:00:00').toLocaleDateString(lang==='de'?'de-DE':'en-GB',{day:'numeric',month:'short',year:'numeric'}); }catch(e){} }
     return s;
   }
   function srcLink(){
@@ -639,14 +695,20 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
       x.fillStyle='#9aa6c7'; x.textBaseline='top'; x.fillText(String(y).slice(2), bx+bw*0.31, H-B+7);
     });
   }
+  function refreshRadarLabels(){
+    var chips=$('topicChips'), sel=$('inst');
+    if(!chips||!sel) return;
+    Array.prototype.forEach.call(chips.children,function(c,i){ c.textContent=TOPICS[i][lang]||TOPICS[i].en; });
+    Array.prototype.forEach.call(sel.children,function(o,i){ o.textContent=INSTS[i][lang]||INSTS[i].en; });
+  }
   (function initRadar(){
     var chips=$('topicChips'), sel=$('inst');
     TOPICS.forEach(function(t,i){
-      var b=document.createElement('button'); b.type='button'; b.className='chip'; b.textContent=t.en; b.setAttribute('aria-pressed',i===0);
+      var b=document.createElement('button'); b.type='button'; b.className='chip'; b.textContent=t[lang]||t.en; b.setAttribute('aria-pressed',i===0);
       b.onclick=function(){ R.topic=i; Array.prototype.forEach.call(chips.children,function(c,j){c.setAttribute('aria-pressed',j===i);}); loadRadar(); };
       chips.appendChild(b);
     });
-    INSTS.forEach(function(t,i){ var o=document.createElement('option'); o.value=i; o.textContent=t.en; sel.appendChild(o); });
+    INSTS.forEach(function(t,i){ var o=document.createElement('option'); o.value=i; o.textContent=t[lang]||t.en; sel.appendChild(o); });
     sel.onchange=function(){ R.inst=+sel.value; loadRadar(); };
     $('pre').onchange=function(){ R.pre=this.checked; loadRadar(); };
     loadRadar();
