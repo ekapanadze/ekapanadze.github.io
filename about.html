@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | Elene Kapanadze</title>
+<meta name="description" content="Clinical training, a first publication, and a change of direction toward the brain — background on Elene Kapanadze.">
+<link rel="canonical" href="https://kapanadze.com/about.html">
+<style>
+:root{
+  --night:#0b1020; --night2:#111a33; --panel:#101830; --pline:rgba(255,255,255,.09);
+  --ptext:#e8ecf8; --pmuted:#9aa6c7; --glow:#7cc4ff; --pink:#ff7a90; --gold:#ffd166; --teal:#5eead4;
+  --bg:#f7f6f2; --surface:#ffffff; --ink:#14172a; --muted:#5a6079; --line:#e2e1da;
+  --accent:#2f4bb5; --accent-soft:#e9edfb;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+header.nav{position:sticky;top:0;z-index:20;background:rgba(11,16,32,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--pline)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--ptext)}
+.brand:hover{text-decoration:none}
+.nav nav a{color:var(--pmuted);font-size:15px;margin-left:24px}
+.nav nav a:hover{color:#fff;text-decoration:none}
+.lang{display:inline-flex;border:1px solid var(--pline);border-radius:10px;overflow:hidden}
+.lang button{background:transparent;color:var(--pmuted);border:0;padding:8px 16px;font:600 14px var(--sans);cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--glow);color:#08101f}
+
+section.light{padding:72px 0 80px;border-top:1px solid var(--line)}
+.backlink{display:inline-block;margin-bottom:28px;color:var(--muted);font-size:14px;border-bottom:1px solid var(--line)}
+.backlink:hover{color:var(--accent);text-decoration:none;border-color:var(--accent)}
+h2.h{font-family:var(--serif);font-size:32px;margin:0 0 8px;font-weight:600}
+.sub2{color:var(--muted);margin:0 0 36px;max-width:38em}
+.about{display:grid;grid-template-columns:1.5fr 1fr;gap:56px}
+.about p{margin:0 0 16px}
+.facts{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 24px;align-self:start}
+.facts dl{margin:0}
+.facts dt{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:14px}
+.facts dt:first-child{margin-top:0}
+.facts dd{margin:2px 0 0;font-size:16px}
+.bring{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:8px}
+.bring div{border-top:2px solid var(--accent);padding-top:14px}
+.bring h4{font-family:var(--serif);font-size:19px;margin:0 0 6px}
+.bring p{margin:0;color:var(--muted);font-size:15.5px}
+.h3sec{font-family:var(--serif);font-size:22px;margin:52px 0 16px;font-weight:600}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{padding:16px 0;border-top:1px solid var(--line)}
+.timeline li:first-child{border-top:0;padding-top:0}
+.ttitle{font-weight:600;font-size:16px}
+.tmeta{font-size:13.5px;color:var(--muted);margin:2px 0 6px}
+.tdesc{font-size:15px;color:var(--muted);margin:0}
+
+footer{background:var(--night);color:var(--pmuted);padding:56px 0 64px;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
+.contact-big{font-family:var(--serif);font-size:clamp(24px,4vw,36px)}
+.contact-big a{color:var(--ptext)}
+
+@media (max-width:860px){
+  .about{grid-template-columns:1fr;gap:32px}
+  .nav nav a.nl{display:none}
+  .nav nav .lang{margin-left:0 !important}
+  section.light{padding:48px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Elene Kapanadze</a>
+    <nav>
+      <a class="nl" href="index.html#radar" data-i="navRadar">Radar</a>
+      <a class="nl" href="index.html#lab" data-i="navLab">Lab</a>
+      <a class="nl" href="index.html#research" data-i="navResearch">Research</a>
+      <div class="lang" style="margin-left:22px" role="group" aria-label="Language">
+        <button type="button" id="bEn" aria-pressed="true">EN</button>
+        <button type="button" id="bDe" aria-pressed="false">DE</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="light" id="about">
+    <div class="wrap">
+      <a class="backlink" href="index.html" data-i="backHome">&larr; Back to the site</a>
+      <div class="about">
+        <div>
+          <h2 class="h" data-i="aboutH">About</h2>
+          <p class="sub2" data-i="aboutSub">Clinical training, a first publication, and a change of direction toward the brain.</p>
+          <p data-i="aboutP1">I am a sixth-year medical student at Petre Shotadze Tbilisi Medical Academy in Georgia. My first publication was a microbiology study of antibiotic resistance patterns in <em>Staphylococcus aureus</em>, where I did the laboratory work, the statistics and the data visualization.</p>
+          <p data-i="aboutP2">That taught me how to run a study from bench to manuscript. My interest has since moved to computational and systems neuroscience, and to neuropsychiatry in particular: how signals from the brain, such as EEG and imaging, can support more objective diagnosis of psychiatric conditions.</p>
+          <p data-i="aboutP3">The research radar and the lab on the site are built to be useful, not decorative: the radar tracks new work from Swiss labs as it is published, and the lab explains models I study, in English and in German, for colleagues in the German-speaking research world too.</p>
+        </div>
+        <aside class="facts">
+          <dl>
+            <dt data-i="factTrainingK">Training</dt><dd data-i="factTrainingV">MD, Petre Shotadze Tbilisi Medical Academy</dd>
+            <dt data-i="factInterestsK">Interests</dt><dd data-i="factInterestsV">Computational and systems neuroscience, neuropsychiatry, EEG and neuroimaging</dd>
+            <dt data-i="factCoursesK">Courses</dt><dd>Computational Neuroscience (Coursera); Foundations of Clinical Neuroscience</dd>
+            <dt data-i="factLangK">Languages</dt><dd data-i="factLangV">Georgian (native), English (C1), German (C1), Russian (fluent)</dd>
+          </dl>
+        </aside>
+      </div>
+      <div class="bring">
+        <div><h4 data-i="bring1H">Clinical grounding</h4><p data-i="bring1P">Six years of medical training. I know what the diagnostic problem looks like at the bedside, which is the problem the models are meant to serve.</p></div>
+        <div><h4 data-i="bring2H">Research craft</h4><p data-i="bring2P">I designed, ran and published a laboratory study, with statistical analysis in SPSS and data visualization.</p></div>
+        <div><h4 data-i="bring3H">Computational training</h4><p data-i="bring3P">Coursework in computational neuroscience, and an independent reanalysis of published ENIGMA-ADHD neuroimaging data, built in Python and published on GitHub Pages.</p></div>
+      </div>
+
+      <h3 class="h3sec" data-i="expH">Experience</h3>
+      <ul class="timeline">
+        <li>
+          <div class="ttitle" data-i="exp1T">Volunteer research assistant</div>
+          <div class="tmeta" data-i="exp1M">Department of Brain Ultrastructure and Nanoarchitecture, Ivane Beritashvili Center of Experimental Biomedicine, Tbilisi · Apr 2025&ndash;present</div>
+          <div class="tdesc" data-i="exp1D">Animal research on the effects of addictive substances on brain structure and behaviour.</div>
+        </li>
+        <li>
+          <div class="ttitle" data-i="exp2T">Nurse, acute psychiatric department</div>
+          <div class="tmeta" data-i="exp2M">Mental Health University Clinic, Tbilisi · Sep 2026&ndash;present</div>
+          <div class="tdesc" data-i="exp2D">Inpatient care of patients in acute psychiatric crises.</div>
+        </li>
+        <li>
+          <div class="ttitle" data-i="exp3T">Clinical internship, emergency medicine</div>
+          <div class="tmeta" data-i="exp3M">Tbilisi Central Hospital · 2025</div>
+        </li>
+        <li>
+          <div class="ttitle" data-i="exp4T">Laboratory assistant intern, quality control</div>
+          <div class="tmeta" data-i="exp4M">Onyx, a pharmaceutical company · 2025</div>
+        </li>
+        <li>
+          <div class="ttitle" data-i="exp5T">Volunteer</div>
+          <div class="tmeta" data-i="exp5M">Center of Mental Health and Prevention of Addiction, Tbilisi · Feb&ndash;Jun 2026</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div>
+      <div class="contact-big"><a href="mailto:elene@kapanadze.com">elene@kapanadze.com</a></div>
+      <div data-i="footerLine">Open to research opportunities and to PhD supervisors&rsquo; questions.</div>
+    </div>
+    <div>&copy; <span id="yr"></span> Elene Kapanadze</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var TXT = {
+    en:{
+      navRadar:"Radar", navLab:"Lab", navResearch:"Research",
+      backHome:"← Back to the site",
+      aboutH:"About",
+      aboutSub:"Clinical training, a first publication, and a change of direction toward the brain.",
+      aboutP1:"I am a sixth-year medical student at Petre Shotadze Tbilisi Medical Academy in Georgia. My first publication was a microbiology study of antibiotic resistance patterns in <em>Staphylococcus aureus</em>, where I did the laboratory work, the statistics and the data visualization.",
+      aboutP2:"That taught me how to run a study from bench to manuscript. My interest has since moved to computational and systems neuroscience, and to neuropsychiatry in particular: how signals from the brain, such as EEG and imaging, can support more objective diagnosis of psychiatric conditions.",
+      aboutP3:"The research radar and the lab on the site are built to be useful, not decorative: the radar tracks new work from Swiss labs as it is published, and the lab explains models I study, in English and in German, for colleagues in the German-speaking research world too.",
+      factTrainingK:"Training", factTrainingV:"MD, Petre Shotadze Tbilisi Medical Academy",
+      factInterestsK:"Interests", factInterestsV:"Computational and systems neuroscience, neuropsychiatry, EEG and neuroimaging",
+      factCoursesK:"Courses",
+      factLangK:"Languages", factLangV:"Georgian (native), English (C1), German (C1), Russian (fluent)",
+      bring1H:"Clinical grounding", bring1P:"Six years of medical training. I know what the diagnostic problem looks like at the bedside, which is the problem the models are meant to serve.",
+      bring2H:"Research craft", bring2P:"I designed, ran and published a laboratory study, with statistical analysis in SPSS and data visualization.",
+      bring3H:"Computational training", bring3P:"Coursework in computational neuroscience, and an independent reanalysis of published ENIGMA-ADHD neuroimaging data, built in Python and published on GitHub Pages.",
+      expH:"Experience",
+      exp1T:"Volunteer research assistant",
+      exp1M:"Department of Brain Ultrastructure and Nanoarchitecture, Ivane Beritashvili Center of Experimental Biomedicine, Tbilisi · Apr 2025–present",
+      exp1D:"Animal research on the effects of addictive substances on brain structure and behaviour.",
+      exp2T:"Nurse, acute psychiatric department",
+      exp2M:"Mental Health University Clinic, Tbilisi · Sep 2026–present",
+      exp2D:"Inpatient care of patients in acute psychiatric crises.",
+      exp3T:"Clinical internship, emergency medicine",
+      exp3M:"Tbilisi Central Hospital · 2025",
+      exp4T:"Laboratory assistant intern, quality control",
+      exp4M:"Onyx, a pharmaceutical company · 2025",
+      exp5T:"Volunteer",
+      exp5M:"Center of Mental Health and Prevention of Addiction, Tbilisi · Feb–Jun 2026",
+      footerLine:"Open to research opportunities and to PhD supervisors’ questions."
+    },
+    de:{
+      navRadar:"Radar", navLab:"Labor", navResearch:"Forschung",
+      backHome:"← Zurück zur Website",
+      aboutH:"Über mich",
+      aboutSub:"Klinische Ausbildung, eine erste Publikation und eine neue Richtung: das Gehirn.",
+      aboutP1:"Ich bin Medizinstudentin im sechsten Jahr an der Petre Shotadze Tbilisi Medical Academy in Georgien. Meine erste Publikation war eine mikrobiologische Studie zu Antibiotikaresistenzmustern bei <em>Staphylococcus aureus</em>, bei der ich die Laborarbeit, die Statistik und die Datenvisualisierung übernahm.",
+      aboutP2:"Das hat mir gezeigt, wie man eine Studie von der Laborbank bis zum Manuskript führt. Mein Interesse hat sich seitdem zur computergestützten Systemneurowissenschaft verschoben, insbesondere zur Neuropsychiatrie: wie Signale aus dem Gehirn, etwa EEG und Bildgebung, eine objektivere Diagnostik psychiatrischer Erkrankungen unterstützen können.",
+      aboutP3:"Das Forschungsradar und das Labor auf der Website sind nützlich gedacht, nicht nur dekorativ: Das Radar verfolgt neue Arbeiten Schweizer Labore, sobald sie veröffentlicht werden, und das Labor erklärt Modelle, die ich studiere, auf Englisch und auf Deutsch, auch für Kolleg:innen aus dem deutschsprachigen Forschungsraum.",
+      factTrainingK:"Ausbildung", factTrainingV:"Humanmedizin, Petre Shotadze Tbilisi Medical Academy",
+      factInterestsK:"Interessen", factInterestsV:"Computergestützte Systemneurowissenschaft, Neuropsychiatrie, EEG und Neuroimaging",
+      factCoursesK:"Kurse",
+      factLangK:"Sprachen", factLangV:"Georgisch (Muttersprache), Englisch (C1), Deutsch (C1), Russisch (fließend)",
+      bring1H:"Klinische Grundlage", bring1P:"Sechs Jahre medizinische Ausbildung. Ich weiß, wie sich das diagnostische Problem am Krankenbett darstellt — genau das Problem, dem die Modelle dienen sollen.",
+      bring2H:"Forschungserfahrung", bring2P:"Ich habe eine Laborstudie konzipiert, durchgeführt und veröffentlicht, mit statistischer Analyse in SPSS und Datenvisualisierung.",
+      bring3H:"Computergestützte Ausbildung", bring3P:"Kursarbeit in computergestützter Neurowissenschaft sowie eine eigenständige Neuauswertung veröffentlichter ENIGMA-ADHD-Neuroimaging-Daten, umgesetzt in Python und veröffentlicht auf GitHub Pages.",
+      expH:"Erfahrung",
+      exp1T:"Freiwillige wissenschaftliche Mitarbeiterin",
+      exp1M:"Abteilung für Hirnultrastruktur und Nanoarchitektur, Ivane-Beritashvili-Zentrum für Experimentelle Biomedizin, Tiflis · Apr. 2025–heute",
+      exp1D:"Tierexperimentelle Forschung zu den Auswirkungen suchterzeugender Substanzen auf Hirnstruktur und Verhalten.",
+      exp2T:"Krankenschwester, Akutpsychiatrie",
+      exp2M:"Mental Health University Clinic, Tiflis · Sep. 2026–heute",
+      exp2D:"Stationäre Versorgung von Patient:innen in akuten psychiatrischen Krisen.",
+      exp3T:"Klinisches Praktikum, Notfallmedizin",
+      exp3M:"Tbilisi Central Hospital · 2025",
+      exp4T:"Laborpraktikantin, Qualitätskontrolle",
+      exp4M:"Onyx, ein Pharmaunternehmen · 2025",
+      exp5T:"Freiwillige Mitarbeiterin",
+      exp5M:"Zentrum für psychische Gesundheit und Suchtprävention, Tiflis · Feb.–Jun. 2026",
+      footerLine:"Offen für Forschungsmöglichkeiten und Fragen von PhD-Betreuer:innen."
+    }
+  };
+  var lang='en';
+  function T(k){return TXT[lang][k];}
+  function applyLang(l){
+    lang=l;
+    document.documentElement.lang = (l==='de')?'de':'en';
+    document.querySelectorAll('[data-i]').forEach(function(el){
+      var k=el.getAttribute('data-i'), v=T(k);
+      if(/<[a-z][\s\S]*>/i.test(v)) el.innerHTML=v; else el.textContent=v;
+    });
+    document.getElementById('bEn').setAttribute('aria-pressed', l==='en');
+    document.getElementById('bDe').setAttribute('aria-pressed', l==='de');
+  }
+  document.getElementById('bEn').onclick=function(){applyLang('en');};
+  document.getElementById('bDe').onclick=function(){applyLang('de');};
+})();
+</script>
+</body>
+</html>
