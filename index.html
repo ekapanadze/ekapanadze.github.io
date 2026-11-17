@@ -116,6 +116,8 @@ input[type=range]{width:100%;accent-color:var(--glow)}
 .senior{list-style:none;margin:0;padding:0}
 .senior li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-top:1px solid var(--pline);font-size:15px}
 .senior li:first-child{border-top:0}
+.senior a{color:var(--ptext)}
+.senior a:hover{color:var(--glow);text-decoration:none}
 .senior b{font-variant-numeric:tabular-nums;color:var(--glow)}
 .rstatus{font-size:13px;color:var(--pmuted);margin-top:18px}
 .rstatus a{color:var(--glow)}
@@ -368,6 +370,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
       yearHint:"Papers matching the filters (the current year is partial).",
       seniorT:"Senior authors to watch",
       seniorNote:"Most frequent last authors, usually the group leaders, among the latest 100 matching papers.",
+      seniorLink:"Search this name on Google Scholar",
       noSenior:"Not enough repeat authors in this selection.",
       loading:"Loading live data…", errMsg:"Could not load live data right now.",
       openSrc:"Open this search in Europe PMC", liveAt:"Live from Europe PMC, updated",
@@ -400,6 +403,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
       yearHint:"Publikationen, die den Filtern entsprechen (das laufende Jahr ist unvollständig).",
       seniorT:"Zu beobachtende Seniorautor:innen",
       seniorNote:"Häufigste Letztautor:innen, in der Regel die Gruppenleiter:innen, unter den neuesten 100 passenden Publikationen.",
+      seniorLink:"Diesen Namen bei Google Scholar suchen",
       noSenior:"Nicht genügend wiederkehrende Autor:innen in dieser Auswahl.",
       loading:"Live-Daten werden geladen…", errMsg:"Live-Daten konnten gerade nicht geladen werden.",
       openSrc:"Diese Suche in Europe PMC öffnen", liveAt:"Live von Europe PMC, aktualisiert",
@@ -628,7 +632,13 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
     var cnt={}; d.rows.forEach(function(p){ var au=authorList(p.authors); if(au.length<2) return; var l=au[au.length-1]; if(/consortium|group|collaborat|study/i.test(l)) return; cnt[l]=(cnt[l]||0)+1; });
     var top=Object.keys(cnt).filter(function(k){return cnt[k]>=2;}).sort(function(a,b){return cnt[b]-cnt[a];}).slice(0,8);
     if(!top.length){ var li0=document.createElement('li'); li0.style.color='var(--pmuted)'; li0.textContent=T('noSenior'); sen.appendChild(li0); }
-    top.forEach(function(k){ var li=document.createElement('li'), n=document.createElement('span'), c=document.createElement('b'); n.textContent=k; c.textContent=cnt[k]; li.appendChild(n); li.appendChild(c); sen.appendChild(li); });
+    top.forEach(function(k){
+      var li=document.createElement('li'), n=document.createElement('a'), c=document.createElement('b');
+      n.textContent=k; n.href='https://scholar.google.com/citations?view_op=search_authors&mauthors='+encodeURIComponent(k);
+      n.target='_blank'; n.rel='noopener'; n.title=T('seniorLink');
+      c.textContent=cnt[k];
+      li.appendChild(n); li.appendChild(c); sen.appendChild(li);
+    });
     var tm=new Date(d.t).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
     st.appendChild(document.createTextNode(T('liveAt')+' '+tm+' · ')); st.appendChild(srcLink());
     drawYears(d);
