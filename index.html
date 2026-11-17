@@ -171,7 +171,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
     <nav>
       <a class="nl" href="#radar" data-i="navRadar">Radar</a>
       <a class="nl" href="#lab" data-i="navLab">Lab</a>
-      <a class="nl" href="#about" data-i="navAbout">About</a>
       <a class="nl" href="#research" data-i="navResearch">Research</a>
       <div class="lang" style="margin-left:22px" role="group" aria-label="Language">
         <button type="button" id="bEn" aria-pressed="true">EN</button>
@@ -191,6 +190,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
       <div class="btns">
         <a class="btn primary" href="#radar" data-i="btnRadar">See the live research radar</a>
         <a class="btn" href="#lab" data-i="btnLab">Try the brain lab</a>
+        <a class="btn" href="about.html" data-i="btnAbout">About me</a>
         <a class="btn" href="mailto:elene@kapanadze.com" data-i="btnEmail">Email me</a>
         <a class="btn" href="cv.pdf" data-i="btnCv">Download CV</a>
       </div>
@@ -294,33 +294,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
     </div>
   </section>
 
-  <section class="light" id="about">
-    <div class="wrap">
-      <div class="about">
-        <div>
-          <h2 class="h" data-i="aboutH">About</h2>
-          <p class="sub2" data-i="aboutSub">Clinical training, a first publication, and a change of direction toward the brain.</p>
-          <p data-i="aboutP1">I am a sixth-year medical student at Petre Shotadze Tbilisi Medical Academy in Georgia. My first publication was a microbiology study of antibiotic resistance patterns in <em>Staphylococcus aureus</em>, where I did the laboratory work, the statistics and the data visualization.</p>
-          <p data-i="aboutP2">That taught me how to run a study from bench to manuscript. My interest has since moved to computational and systems neuroscience, and to neuropsychiatry in particular: how signals from the brain, such as EEG and imaging, can support more objective diagnosis of psychiatric conditions.</p>
-          <p data-i="aboutP3">The research radar and the lab on this page are built to be useful, not decorative: the radar tracks new work from Swiss labs as it is published, and the lab explains models I study, in English and in German, for colleagues in the German-speaking research world too.</p>
-        </div>
-        <aside class="facts">
-          <dl>
-            <dt data-i="factTrainingK">Training</dt><dd data-i="factTrainingV">MD, Petre Shotadze Tbilisi Medical Academy</dd>
-            <dt data-i="factInterestsK">Interests</dt><dd data-i="factInterestsV">Computational and systems neuroscience, neuropsychiatry, EEG and neuroimaging</dd>
-            <dt data-i="factCoursesK">Courses</dt><dd>Computational Neuroscience (Coursera); Foundations of Clinical Neuroscience</dd>
-            <dt data-i="factLangK">Languages</dt><dd data-i="factLangV">Georgian (native), English (C1), German (C1), Russian (fluent)</dd>
-          </dl>
-        </aside>
-      </div>
-      <div class="bring">
-        <div><h4 data-i="bring1H">Clinical grounding</h4><p data-i="bring1P">Six years of medical training. I know what the diagnostic problem looks like at the bedside, which is the problem the models are meant to serve.</p></div>
-        <div><h4 data-i="bring2H">Research craft</h4><p data-i="bring2P">I designed, ran and published a laboratory study, with statistical analysis in SPSS and data visualization.</p></div>
-        <div><h4 data-i="bring3H">Computational training</h4><p data-i="bring3P">Coursework in computational neuroscience, and an independent reanalysis of published ENIGMA-ADHD neuroimaging data, built in Python and published on GitHub Pages.</p></div>
-      </div>
-    </div>
-  </section>
-
   <section class="light" id="research">
     <div class="wrap">
       <h2 class="h" data-i="resH">Research</h2>
@@ -360,24 +333,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
   /* ---------- language ---------- */
   var TXT = {
     en:{
-      navRadar:"Radar", navLab:"Lab", navAbout:"About", navResearch:"Research",
+      navRadar:"Radar", navLab:"Lab", navResearch:"Research",
       eyebrow:"MD candidate · Tbilisi, Georgia",
       h1:"A physician-in-training who builds models of the brain.",
       lead:"I combine clinical training with computational neuroscience, aiming at objective, biomarker-based diagnosis in psychiatry.",
       btnRadar:"See the live research radar", btnLab:"Try the brain lab",
-      btnEmail:"Email me", btnCv:"Download CV",
-      aboutH:"About",
-      aboutSub:"Clinical training, a first publication, and a change of direction toward the brain.",
-      aboutP1:"I am a sixth-year medical student at Petre Shotadze Tbilisi Medical Academy in Georgia. My first publication was a microbiology study of antibiotic resistance patterns in <em>Staphylococcus aureus</em>, where I did the laboratory work, the statistics and the data visualization.",
-      aboutP2:"That taught me how to run a study from bench to manuscript. My interest has since moved to computational and systems neuroscience, and to neuropsychiatry in particular: how signals from the brain, such as EEG and imaging, can support more objective diagnosis of psychiatric conditions.",
-      aboutP3:"The research radar and the lab on this page are built to be useful, not decorative: the radar tracks new work from Swiss labs as it is published, and the lab explains models I study, in English and in German, for colleagues in the German-speaking research world too.",
-      factTrainingK:"Training", factTrainingV:"MD, Petre Shotadze Tbilisi Medical Academy",
-      factInterestsK:"Interests", factInterestsV:"Computational and systems neuroscience, neuropsychiatry, EEG and neuroimaging",
-      factCoursesK:"Courses",
-      factLangK:"Languages", factLangV:"Georgian (native), English (C1), German (C1), Russian (fluent)",
-      bring1H:"Clinical grounding", bring1P:"Six years of medical training. I know what the diagnostic problem looks like at the bedside, which is the problem the models are meant to serve.",
-      bring2H:"Research craft", bring2P:"I designed, ran and published a laboratory study, with statistical analysis in SPSS and data visualization.",
-      bring3H:"Computational training", bring3P:"Coursework in computational neuroscience, and an independent reanalysis of published ENIGMA-ADHD neuroimaging data, built in Python and published on GitHub Pages.",
+      btnAbout:"About me", btnEmail:"Email me", btnCv:"Download CV",
       resH:"Research", resSub:"One peer-reviewed paper, and an independent computational project built on published data.",
       tagPub:"Published",
       card1P:"A public health-oriented study of antibiotic resistance. My contributions: bacterial culture, disk diffusion susceptibility testing, SPSS statistical analysis, data visualization and manuscript drafting.",
@@ -412,12 +373,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
       matches:"matching papers", noRes:"No papers found for this selection.", papersN:"papers"
     },
     de:{
-      navRadar:"Radar", navLab:"Labor", navAbout:"Über mich", navResearch:"Forschung",
+      navRadar:"Radar", navLab:"Labor", navResearch:"Forschung",
       eyebrow:"Medizinstudentin · Tiflis, Georgien",
       h1:"Eine angehende Ärztin, die Modelle des Gehirns entwickelt.",
       lead:"Ich verbinde klinische Ausbildung mit computergestützter Neurowissenschaft, mit dem Ziel einer objektiveren, biomarkerbasierten Diagnostik in der Psychiatrie.",
       btnRadar:"Das Live-Forschungsradar ansehen", btnLab:"Zum Gehirnlabor",
-      btnEmail:"E-Mail senden", btnCv:"Lebenslauf herunterladen",
+      btnAbout:"Über mich", btnEmail:"E-Mail senden", btnCv:"Lebenslauf herunterladen",
       labTitle:"Interaktives Gehirnlabor",
       labSub:"Modelle der computergestützten Neurowissenschaft, die Sie selbst testen können. Bewegen Sie die Regler und beobachten Sie, wie das Neuron reagiert.",
       hhTitle:"Ein Neuron: das Hodgkin–Huxley-Modell",
@@ -442,18 +403,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
       loading:"Live-Daten werden geladen…", errMsg:"Live-Daten konnten gerade nicht geladen werden.",
       openSrc:"Diese Suche in Europe PMC öffnen", liveAt:"Live von Europe PMC, aktualisiert",
       matches:"passende Publikationen", noRes:"Keine Publikationen für diese Auswahl gefunden.", papersN:"Publikationen",
-      aboutH:"Über mich",
-      aboutSub:"Klinische Ausbildung, eine erste Publikation und eine neue Richtung: das Gehirn.",
-      aboutP1:"Ich bin Medizinstudentin im sechsten Jahr an der Petre Shotadze Tbilisi Medical Academy in Georgien. Meine erste Publikation war eine mikrobiologische Studie zu Antibiotikaresistenzmustern bei <em>Staphylococcus aureus</em>, bei der ich die Laborarbeit, die Statistik und die Datenvisualisierung übernahm.",
-      aboutP2:"Das hat mir gezeigt, wie man eine Studie von der Laborbank bis zum Manuskript führt. Mein Interesse hat sich seitdem zur computergestützten Systemneurowissenschaft verschoben, insbesondere zur Neuropsychiatrie: wie Signale aus dem Gehirn, etwa EEG und Bildgebung, eine objektivere Diagnostik psychiatrischer Erkrankungen unterstützen können.",
-      aboutP3:"Das Forschungsradar und das Labor auf dieser Seite sind nützlich gedacht, nicht nur dekorativ: Das Radar verfolgt neue Arbeiten Schweizer Labore, sobald sie veröffentlicht werden, und das Labor erklärt Modelle, die ich studiere, auf Englisch und auf Deutsch, auch für Kolleg:innen aus dem deutschsprachigen Forschungsraum.",
-      factTrainingK:"Ausbildung", factTrainingV:"Humanmedizin, Petre Shotadze Tbilisi Medical Academy",
-      factInterestsK:"Interessen", factInterestsV:"Computergestützte Systemneurowissenschaft, Neuropsychiatrie, EEG und Neuroimaging",
-      factCoursesK:"Kurse",
-      factLangK:"Sprachen", factLangV:"Georgisch (Muttersprache), Englisch (C1), Deutsch (C1), Russisch (fließend)",
-      bring1H:"Klinische Grundlage", bring1P:"Sechs Jahre medizinische Ausbildung. Ich weiß, wie sich das diagnostische Problem am Krankenbett darstellt — genau das Problem, dem die Modelle dienen sollen.",
-      bring2H:"Forschungserfahrung", bring2P:"Ich habe eine Laborstudie konzipiert, durchgeführt und veröffentlicht, mit statistischer Analyse in SPSS und Datenvisualisierung.",
-      bring3H:"Computergestützte Ausbildung", bring3P:"Kursarbeit in computergestützter Neurowissenschaft sowie eine eigenständige Neuauswertung veröffentlichter ENIGMA-ADHD-Neuroimaging-Daten, umgesetzt in Python und veröffentlicht auf GitHub Pages.",
       resH:"Forschung", resSub:"Eine peer-reviewte Publikation und ein eigenständiges computergestütztes Projekt auf Basis veröffentlichter Daten.",
       tagPub:"Veröffentlicht",
       card1P:"Eine Studie im Bereich Public Health zu Antibiotikaresistenzen. Meine Beiträge: bakterielle Kultur, Diskdiffusionstests zur Empfindlichkeitsbestimmung, statistische Analyse in SPSS, Datenvisualisierung und Verfassen des Manuskripts.",
